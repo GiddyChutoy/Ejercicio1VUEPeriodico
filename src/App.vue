@@ -1,11 +1,17 @@
 <template>
-  <router-view/>
   <div id="nav">
+    <div class="header">
+      <h1>THE WORLD</h1> 
+    </div>
     <router-link to="/">Inicio</router-link> |
     <router-link to="/articulos">Artículos</router-link> | 
     <router-link to="/acerca">Acerca de</router-link>
+    <router-view/>
   </div>
+
 </template>
+
+
 
 <style>
 #app {

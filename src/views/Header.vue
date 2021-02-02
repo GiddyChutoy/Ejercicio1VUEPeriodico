@@ -1,7 +1,5 @@
 <template>
-  <div class="header">
-    <h1>THE WORLD</h1>
-  </div>
+  <p>Hola, bienvenido</p>
 </template>
 
 <script>
@@ -16,10 +14,3 @@ export default {
 }
 </script>
 
-
-<style scoped>
-  div{
-    background-color: grey;
-    color: black;
-  }
-</style>
