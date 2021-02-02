@@ -1,5 +1,5 @@
 <template>
-  <div class="ContenidoArticulo">
+  <div id="ContenidoArticulo">
     <h1>Articulo {{this.articulos.id}}</h1>
     <p> {{this.articulos.body}}</p>
     <!--<router-link v-for="(articulo, index) in articulos" :key="index" > Enlace {{articulo.body}} <br></router-link>-->

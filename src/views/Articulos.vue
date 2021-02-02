@@ -1,5 +1,5 @@
 <template>
-  <div class="Articulos">
+  <div id="Articulos">
     <h1>Articulos</h1>
     <router-link :to="'/Articulos/' + articulo.id" v-for="(articulo, index) in articulos" :key="index" > Enlace {{articulo.id}} <br></router-link>
   </div>
