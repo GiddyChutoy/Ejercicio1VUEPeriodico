@@ -1,7 +1,7 @@
 <template>
   <div class="Articulos">
     <h1>Articulos</h1>
-    <router-link to="/Articulos/{{articulo.id}}" v-for="(articulo, index) in articulos" :key="index" > Enlace {{articulo.id}} <br></router-link>
+    <router-link :to="'/Articulos/' + articulo.id" v-for="(articulo, index) in articulos" :key="index" > Enlace {{articulo.id}} <br></router-link>
   </div>
 </template>
 
