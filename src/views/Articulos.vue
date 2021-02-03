@@ -6,7 +6,9 @@
 </template>
 
 <script>
+import axios from 'axios';
 export default {
+
   name: 'Articulos',
   components: {
     
@@ -16,14 +18,18 @@ export default {
       articulos: []
     }
   },
-  methods: {
+  /*methods: {
     barras: async function getUserAsync() {
       let response = await fetch(`https://jsonplaceholder.typicode.com/posts`);
       this.articulos = await response.json()
     }
-  },
+  },*/
   created() {
-    this.barras()
+    //this.barras()
+
+    axios.get("https://jsonplaceholder.typicode.com/todos/").then((result) => {
+      this.articulos = result.data;
+    })
   },
 
   
