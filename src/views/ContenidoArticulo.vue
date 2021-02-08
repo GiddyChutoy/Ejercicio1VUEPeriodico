@@ -15,9 +15,6 @@ export default {
       articulos: {},
     };
   },
-  created() {
-        this.barras
-    },
   methods: {
     barras: async function getUserAsync() {
       let response = await fetch(`https://jsonplaceholder.typicode.com/posts/` + this.$route.params.id);
